@@ -2,10 +2,10 @@
 // Reemplaza estos valores antes de publicar.
 
 /** Número de WhatsApp en formato internacional sin "+" ni espacios (52 + 10 dígitos). */
-export const WHATSAPP_NUMBER = "520000000000";
+export const WHATSAPP_NUMBER = "529371194962";
 
 /** Ruta pública del instalador. Coloca el archivo en /public/downloads/. */
-export const DOWNLOAD_URL = "/downloads/POSLY_Setup.exe";
+export const DOWNLOAD_URL = "/downloads/PoslyApp-win-Setup.zip";
 
 export const APP_VERSION = "0.1.0";
 

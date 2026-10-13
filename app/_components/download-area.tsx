@@ -1,4 +1,4 @@
-import {
+﻿import {
   Download,
   CheckCircle2,
   Monitor,
@@ -66,7 +66,7 @@ export function DownloadArea() {
                 >
                   <Download className="size-6 transition group-hover:-translate-y-0.5" strokeWidth={2.5} />
                   <div className="text-left">
-                    <span className="block leading-tight font-extrabold">Descargar POSLY_Setup.exe</span>
+                    <span className="block leading-tight font-extrabold">Descargar PoslyApp-win-Setup</span>
                     <span className="block text-xs font-medium text-brand-100 mt-0.5">
                       Instalador Ligero · Windows 10/11 · Prueba Gratis
                     </span>
