@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Paleta FerreSys - Azul Industrial de Alta Confiabilidad Tecnológica */
+  --color-slate-950: #050b17;
+  --color-ink: #07122b;
+  --color-ink-muted: #334155;
+  
+  --color-brand-25: #f6f9fe;
+  --color-brand-50: #eef5fc;
+  --color-brand-100: #d9e8fa;
+  --color-brand-200: #b9d5f7;
+  --color-brand-300: #88bbf2;
+  --color-brand-400: #4f9aeb;
+  --color-brand-500: #257ce2;
+  --color-brand-600: #0264d6; /* Azul FerreSys Exacto */
+  --color-brand-700: #0250b0;
+  --color-brand-800: #064491;
+  --color-brand-900: #0a3a75;
+  --color-brand-950: #06234b;
+
+  --color-work: #ea580c;
+  --color-work-hover: #c2410c;
+  
+  --color-success: #15803d;
+  --color-success-bg: #ecfdf5;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  color-scheme: light only;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  background: #f8fafc;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+}
+
+/* Patrón tecnológico sutil azul para dar carácter y volumen */
+.bg-tech-blueprint {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(2, 100, 214, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(14, 165, 233, 0.07) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(2, 100, 214, 0.05) 0px, transparent 50%),
+    linear-gradient(to right, rgba(2, 100, 214, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(2, 100, 214, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(2, 100, 214, 0.12) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+}
+
+/* Sombras refinadas de software */
+.shadow-app {
+  box-shadow: 0 25px 60px -15px rgba(2, 40, 95, 0.18), 0 0 0 1px rgba(2, 100, 214, 0.15);
+}
+
+.shadow-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.shadow-card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 35px -10px rgba(2, 40, 95, 0.12), 0 0 0 1.5px rgba(2, 100, 214, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
